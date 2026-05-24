@@ -9,7 +9,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-1D8348?style=for-the-badge)
 
 **Supervised by: Dr. Ahmed**  
-*Engineering Department — 2024*
+*AeroSpace Engineering Department — 2026*
 
 </div>
 
@@ -327,18 +327,38 @@ The car runs as a **Finite State Machine (FSM)** with 4 modes:
 
 ## 👥 Team Members
 
-| Member | Sub-Team | Role |
-|--------|----------|------|
-| Member 1 | Team A | Hardware Lead — chassis, motors, L298N |
-| Member 2 | Team A | RF Wiring — nRF24L01 TX/RX installation |
-| Member 3 | Team B | Line Follow Lead — IR sensors + PID code |
-| Member 4 | Team B | Line Follow Testing — track validation |
-| Member 5 | Team C | Obstacle Lead — HC-SR04 + avoidance logic |
-| Member 6 | Team C | Obstacle Testing — distance calibration |
-| Member 7 | Team D | GPS Integration — NEO-6M + TinyGPSPlus |
-| Member 8 | Team D | IMU Integration — MPU-6050 + bias calibration |
-| Member 9 | Team E | EKF Developer — Arduino EKF + RF protocol |
-| Member 10 | Team E | MATLAB Ground Station — Kalman + dashboard |
+Team — 10 Members / 5 Sub-Teams
+Team Lead:
+Karim Ahmed  —  Overall team lead, EKF algorithm lead, nRF24L01 RF protocol design.
+
+Sub-Team A — Hardware & Structure
+Member	Role	Responsibilities
+Nour El-din Mahmoud	Integration Lead & Line Following Lead	Full-system integration of all modules; line-following lead; final hardware assembly and validation.
+Yara El-fayomi	Structure Team	Chassis design, mechanical assembly, motor mounting, physical layout of components.
+Wgdan Mohammed	Structure Team	Chassis fabrication, power distribution board, L298N and battery wiring.
+
+Sub-Team B — Line Following
+Member	Role	Responsibilities
+Adam Mohammed	Line Following	3x IR sensor wiring & calibration; PID line-follow code; track testing on curves and intersections.
+
+Sub-Team C — Obstacle Avoidance
+Member	Role	Responsibilities
+Rahma Ahmed	Obstacle Avoidance & Tasks Manager	HC-SR04 wiring; avoidance maneuver code; speed/distance threshold calibration; overall task coordination.
+Hager Khalaf	Obstacle & MATLAB Code	Obstacle testing; speed/distance tests; MATLAB dashboard development and serial parsing.
+
+Sub-Team D — GPS & IMU
+Member	Role	Responsibilities
+Rania Mokhles	GPS INS Connections & Code	NEO-6M GPS wiring, TinyGPSPlus integration, coordinate conversion, GPS-INS sensor fusion connections.
+Aya Saeed	MATLAB Code & GPS INS Connections	MPU-6050 gyro bias calibration; accelerometer noise analysis; MATLAB Kalman filter script; GPS-INS connections.
+
+Sub-Team E — EKF, RF & MATLAB
+Member	Role	Responsibilities
+Karim Ahmed	Team Lead & EKF Lead	Extended Kalman Filter algorithm design; team coordination; nRF24L01 TX/RX protocol; 28-byte struct definition.
+Abdulrahman Mostafa	EKF	Arduino EKF implementation; predict/update cycle; covariance tuning; RF packet transmission code.
+Aya Saeed	MATLAB Ground Station	MATLAB Kalman filter script; 8-subplot live dashboard; serial port parsing and data validation.
+Hager Khalaf	MATLAB Ground Station	MATLAB dashboard subplot design; obstacle-related telemetry visualisation; co-development of serial parser.
+
+
 
 > 📌 **Supervised by: Dr. Ahmed** — Engineering Department
 
@@ -516,7 +536,7 @@ copies of the Software.
 
 <div align="center">
 
-**Built with ❤️ by the Engineering Team — 2024**  
+**Built with ❤️ by the Space Invaders Team — 2026**  
 *Supervised by Dr. Ahmed*
 
 [![GitHub Stars](https://img.shields.io/github/stars/your-username/smart-autonomous-car?style=social)](https://github.com/your-username/smart-autonomous-car)
